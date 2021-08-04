@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Testing</title>
+    <style>
+       html{
+   scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: black; 
+    border-radius: 36px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.navbar ul{
+   overflow: auto;
+}
+.navbar li{
+   /* width: 70%; */
+   float: left;
+   list-style: none;
+   margin: 13px 20px;
+   
+   
+}
+.navbar li a{
+   padding: 3px 3px;
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.navbar li a:hover{
+   color:blue;
+
+}
+
+
+.search{
+   float: right;
+   color: white;
+   padding: 12px 75px;
+}
+.navbar input{
+   border: 2px solid black;
+   border-radius: 14px;
+   padding: 3px;
+   width: 129px;
+}
+
+.background{
+   background: rgba(0, 0, 0, 0.7) url(IMG/IMG2.jpg);
+   background-size: cover;
+
+}
+.firstsection{
+   height: 100vh;
+}
+.box-main{
+display:flex;
+justify-content: center;
+align-items: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width: 50%;
+margin: auto;
+}
+.firsthalf{
+padding: 70px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.secondhalf{
+width: 30%;
+
+}
+.secondhalf img{
+width: 70%;
+border: 4px solid black;
+border-radius: 150px;
+display: block;
+}
+
+.text-big{
+font-size: 30px;
+text-align: left;
+
+
+}
+.text-small{
+font-size: 20px;
+
+
+}
+
+.btn{
+margin-top: 14px;
+padding: 8px;
+margin: 7px, 3px;
+border: 2px solid black;
+border-radius: 8px;
+font-size: 18px;
+background: none;
+color: white;
+cursor: pointer;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+
+}
+
+.btn:hover{
+   color:blue;
+   cursor: pointer;
+
+
+}
+
+.btn-sm{
+padding: 6px 10px;
+vertical-align: middle;
+font-size: 16px;
+
+}
+
+
+.btn-dark{
+margin-top: 14px;
+color: black;
+border: 2px solid black;
+
+}
+
+.section{
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+max-width: 80%;
+margin: auto;
+
+}
+
+
+.sectionleft{
+  flex-direction: column-reverse;
+  
+}
+
+.paras{
+padding:10%,0;
+}
+
+.sectionTag{
+padding: 16px,0;
+}
+
+.sectionSubTag{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.thumnail img{
+width: 250px;
+border: 2px black;
+}
+
+
+
+.contact{
+background-color: #f6f5f4;
+height: 583px;
+}
+
+.text-center{
+text-align: center;
+padding-top: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+
+}
+
+.form{
+max-width: 1200px;
+margin: 25px auto;
+}
+
+.form-input{
+margin-top: 14px;
+padding: 5px, 11px;
+width: 100%;
+font-size: 19px;
+border: 2px solid black;
+border-radius: 6px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <section class="contact" id="Contact">
+        <h2 class="text-center"></class> Contact Us </h2>
+    
+        <div class="form">
+            <form action="https://formsubmit.co/mayukhbera20@gmail.com" method="POST">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            <input class="form-input" type="number" name="Phone" id="Phone" placeholder="Enter Your Phone Number" required>
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your E-mail" required>
+            <textarea class="form-input" name="text" id="text" cols="20" rows="10" placeholder=" Your Address"></textarea>
+            <button class="btn btn-sm btn-dark"> Sumbit </button> 
+        </form> 
+        </div>
+
+    </section>
+    <hr><hr>
+    
+    
+</body>
+</html>
